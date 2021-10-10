@@ -1,0 +1,164 @@
+*{
+   
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+/* Header */
+.header {
+    display: none;
+}
+
+.logo{
+    text-align: center;
+    height: 100px;
+    width: auto;
+}
+.mobileMenu{
+    float: right;
+    width: auto;
+    height: 60px;
+    margin: 10px;
+}
+
+.header{
+    text-align: center;
+}
+.header li{
+    list-style: none;
+    padding: .5em;
+    background-color: red;
+   border: solid 1px white;
+   height: auto;
+}
+.header li:active{
+    background-color: yellow;
+}
+
+.header ul{
+   padding: 0px;
+   margin: 10px;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+}
+
+.header ul li{
+    text-align: center;
+}
+
+
+/* main Image  */
+/* discount section */
+.mainImage{
+    background-image: url("images/mainPageImage.jpg");
+    background-size:cover;
+    height: 20em;
+    opacity: 80%;
+}
+
+.mainImage .discountText{
+    
+    color:red;
+    margin-left: 2.8em;
+    letter-spacing: .1em;
+    font-size: 2em;
+    
+}
+
+
+.mainImage .discountBtn{
+    color: red;
+    margin-top: 2em;
+    margin-left: 2.8em;
+    font-size: 1.8em;
+    border: solid 0.1em red;
+    width: fit-content;
+    border-radius: 5em;
+
+}
+
+.mainImage .discountText{
+    padding-top: 2em;
+}
+.discountBtn:hover{
+    background-color: black;
+    color: yellow;
+    cursor: pointer;
+}
+
+
+.Discount{
+   
+}
+
+.simpleText{
+    margin-top: 2em;
+    font-size: 2em;
+    font-style: italic;
+    letter-spacing: .1em;
+
+}
+
+.Discount .category img{
+    border: solid 2px red;
+    width: 200px;
+    height: auto;
+}
+/* popular right now section */
+
+.showcasingItems{
+    background-color: rgb(238, 229, 218);
+    display: flex;
+    width: fit-content;
+
+}
+
+
+.popularItems
+{
+    float: left;
+    width: 33%;
+    padding: 8px;
+}
+.items{
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+}
+
+.items:hover{
+    box-shadow: 2px 8px 12px 0 red;
+}
+
+.items li{
+    border: 1px solid green;
+    padding: 20px;
+    text-align: center;
+}
+
+.itemImage{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+/* category section on mian page  */
+
+.categoryBtn{
+    margin-top: 2em;
+    display: inline-block;
+    padding:.5em .5em;
+    font-size: 1.5em;
+    border: solid 2px red; 
+    border-radius: 1.5em;
+    color: red;
+}
+.categoryBtn:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
