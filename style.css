@@ -1,12 +1,30 @@
 *{
-   
     margin: 0;
     box-sizing: border-box;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 /* Header */
+
 .header {
-    display: none;
+    margin: 10px 10px;
+    display: flex;
+    float: left;
+    align-content: center;
+    background-color: rgb(255, 255, 255);
+    font-size: 2em;
+    padding: 10px;
+    text-align: center;
+    width:100% ;
+    justify-content: flex-start;
+    border-bottom: solid 2px red;
+    align-items: center;
+    
+}
+
+.header a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
 .logo{
@@ -15,47 +33,26 @@
     width: auto;
 }
 .mobileMenu{
+    display: none;
     float: right;
     width: auto;
     height: 60px;
     margin: 10px;
 }
 
-.header{
-    text-align: center;
-}
-.header li{
-    list-style: none;
-    padding: .5em;
-    background-color: red;
-   border: solid 1px white;
-   height: auto;
-}
-.header li:active{
-    background-color: yellow;
-}
-
-.header ul{
-   padding: 0px;
-   margin: 10px;
-}
-.header a{
-    text-decoration: none;
-    color: white;
-}
-
-.header ul li{
-    text-align: center;
-}
 
 
 /* main Image  */
 /* discount section */
 .mainImage{
+    
+   display: inline-block;
     background-image: url("images/mainPageImage.jpg");
-    background-size:cover;
-    height: 20em;
-    opacity: 80%;
+    margin-top: 10px;
+    background-size: cover;
+width: 100%;
+height: auto;
+margin: 10px 10px;
 }
 
 .mainImage .discountText{
@@ -64,26 +61,32 @@
     margin-left: 2.8em;
     letter-spacing: .1em;
     font-size: 2em;
-    
+    padding-top: 2em;
 }
 
 
 .mainImage .discountBtn{
-    color: red;
+    /* color: red;
     margin-top: 2em;
     margin-left: 2.8em;
     font-size: 1.8em;
+
     border: solid 0.1em red;
-    width: fit-content;
-    border-radius: 5em;
+   
+    border-radius: 5em; */
 
+
+    margin-top: 2em;
+    display: inline-block;
+    padding: .5em .5em;
+    font-size: 1.5em;
+    border: solid 2px red;
+    border-radius: 1.5em;
+    color: red;
 }
 
-.mainImage .discountText{
-    padding-top: 2em;
-}
 .discountBtn:hover{
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     color: yellow;
     cursor: pointer;
 }
@@ -106,8 +109,141 @@
     width: 200px;
     height: auto;
 }
-/* popular right now section */
 
+/* slide shoqw css */
+/* Slideshow container */
+.slideshow-container {
+    
+    max-width: 100%;
+    position: relative;
+    margin: 10px 10px;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #ffffff;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+
+  /* testimonial column */
+
+  /* Float four columns side by side */
+.testimonialColumn {
+    float: left;
+    width: 22%;
+    padding: 0 5px;
+    border-radius: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    margin: 10px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    font-size: 1.5em;
+  }
+  
+  .testimonialRow {
+      margin: 0 -5px;
+    }
+  
+  /* Clear floats after the columns */
+  .testimonialRow:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Style the counter cards */
+.card {
+  
+  }
+
+
+
+/* popular right now section */
+/* 
 .showcasingItems{
     background-color: rgb(238, 229, 218);
     display: flex;
@@ -142,8 +278,37 @@
 .itemImage{
     width: 100px;
     height: 100px;
+} */
+
+
+.products .product-slider{
+    padding:1rem;
 }
 
+.products .product-slider:first-child{
+    margin-bottom: 2rem;
+}
+
+
+.products .product-slider .box {
+    background: white;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 3rem 5rem;
+    margin: 1rem;
+    box-shadow: 10px 10px 8px #888888;
+    transition: .2s linear;
+}
+.products .product-slider .box:hover{
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 8px #0a0606;  
+
+}
+
+.products .product-slider .box img{
+    width: 100px; height: 100px;
+}
 
 
 /* category section on mian page  */
@@ -158,7 +323,87 @@
     color: red;
 }
 .categoryBtn:hover{
-    background-color: red;
+    background-color: rgb(255, 255, 255);
     color: white;
     cursor: pointer;
 }
+
+
+/* footer css  */
+.site-footer {
+    background-color: #26272b;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+    margin: 10px;
+  }
+  .col-sm-12{
+      margin: 0px;
+  }
+  .row{
+      display:flex
+
+  }
+  .text-justify{
+     padding: 10px;
+     width: 100%;
+     margin: 0px;
+  }
+  .site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5;
+  }
+  .site-footer hr.small {
+    margin: 20px 0;
+  }
+  .site-footer h6 {
+    color: #fff;
+    font-size: 1.1em;
+    margin-left: 10px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px;
+  }
+  .site-footer a {
+    color: #737373;
+  }
+  .site-footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+  }
+  .footer-links {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .footer-links li {
+    display: block;
+  }
+  .footer-links a {
+    color: #737373;
+  }
+  .footer-links a:active,
+  .footer-links a:focus,
+  .footer-links a:hover {
+    color: #3366cc;
+    text-decoration: none;
+  }
+  .footer-links.inline li {
+    display: inline-block;
+  }
+  .site-footer .social-icons {
+    text-align: right;
+  }
+  .site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #33353d;
+  }
+  .copyright-text {
+    margin: 0;
+  }
